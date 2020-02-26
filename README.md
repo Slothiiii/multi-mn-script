@@ -94,7 +94,7 @@ The _install.sh_ script support the following parameters:
 If you want to check the status of your masternode, the best way is currently running the cli e.g. for $MUE via
 
 ```
-/usr/local/bin/abet-cli -conf=/etc/masternodes/"coinname"_n1.conf getinfo
+/usr/local/bin/"coinname"-cli -conf=/etc/masternodes/"coinname"_n1.conf getinfo
 
 {
   "version": 3040000,
