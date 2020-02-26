@@ -24,7 +24,7 @@ Here is an [easy step-by-step guide for the VPS provider vultr](/docs/vultr-mast
 SSH to your VPS and clone the Github repository:
 
 ```bash
-git clone https://github.com/altbet/multi-mn-script.git && cd multi-mn-script
+git clone https://github.com/Slothiiii/multi-mn-script.git && cd multi-mn-script
 ```
 
 Add executable permission to script:
@@ -36,7 +36,7 @@ chmod +x install.sh
 Install & configure your ABET masternode with option:
 
 ```bash
-./install.sh -p abet
+./install.sh -p "coinname"
 ```
 
 ## Examples for typical script invocation
@@ -46,31 +46,31 @@ These are only a couple of examples for typical setups. Check our [easy step-by-
 **Install & configure 4 ABET masternodes (IPV6):**
 
 ```bash
-./install.sh -p abet -c 4 -n "6"
+./install.sh -p "coinname" -c 4 -n "6"
 ```
 
 **Update daemon of previously installed ABET masternodes:**
 
 ```bash
-./install.sh -p abet -u -n "6"
+./install.sh -p "coinname" -u -n "6"
 ```
 
 **Install 6 ABET masternodes with the git release tag "tags/v3.4.0.0"**
 
 ```bash
-./install.sh -p abet -c 6 -r "tags/v3.4.0.0"
+./install.sh -p "coinname" -c 6 -r "tags/v3.4.0.0"
 ```
 
 **Wipe all ABET masternode data:**
 
 ```bash
-./install.sh -p abet -w
+./install.sh -p "coinname" -w
 ```
 
 **Install 2 ABET masternodes and configure sentinel monitoring:**
 
 ```bash
-./install.sh -p abet -c 2 -s
+./install.sh -p "coinname" -c 2 -s
 ```
 
 ## Options
@@ -94,7 +94,7 @@ The _install.sh_ script support the following parameters:
 If you want to check the status of your masternode, the best way is currently running the cli e.g. for $MUE via
 
 ```
-/usr/local/bin/abet-cli -conf=/etc/masternodes/abet_n1.conf getinfo
+/usr/local/bin/abet-cli -conf=/etc/masternodes/"coinname"_n1.conf getinfo
 
 {
   "version": 3040000,
@@ -122,19 +122,19 @@ If you want to check the status of your masternode, the best way is currently ru
 
 ## Start Coin on initial install
 ```
-/usr/local/bin/activate_masternodes_abet
+/usr/local/bin/activate_masternodes_"coinname"
 ```
 ## Stop coin
 ```
-/usr/local/bin/abet-cli -conf=/etc/masternodes/abet_n1.conf stop
+/usr/local/bin/"coinname"-cli -conf=/etc/masternodes/"coinname"_n1.conf stop
 ```
 ## Start Coin
 ```
-/usr/local/bin/abetd -conf=/etc/masternodes/abet_n1.conf
+/usr/local/bin/"coinname"d -conf=/etc/masternodes/"coinname"_n1.conf
 ```
 ## Getinfo
 ```
-/usr/local/bin/abet-cli -conf=/etc/masternodes/abet_n1.conf getinfo
+/usr/local/bin/"coinname"-cli -conf=/etc/masternodes/"coinname"_n1.conf getinfo
 ```
 
 # Help, Issues and Questions
