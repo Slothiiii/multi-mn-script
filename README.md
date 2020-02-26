@@ -130,7 +130,7 @@ If you want to check the status of your masternode, the best way is currently ru
 ```
 ## Start Coin
 ```
-/usr/local/bin/"coinname"d -conf=/etc/masternodes/"coinname"_n1.conf
+/usr/local/bin/"coinname"d -conf=/etc/masternodes/"coinname"_n1.conf start
 ```
 ## Getinfo
 ```
