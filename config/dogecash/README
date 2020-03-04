@@ -29,12 +29,12 @@ step3:
 ste7:
 #look at blocks
 
-/usr/local/bin/peps-cli -conf=/etc/masternodes/peps_n1.conf getinfo
+/usr/local/bin/dogecash-cli -conf=/etc/masternodes/dogecash_n1.conf getinfo
 
 step8:
 go into your wallet as soon as you have loaded all blocks in the VPS / and start the node in the wallet 
 #status on VPS Succesfull
-/usr/local/bin/peps-cli -conf=/etc/masternodes/peps_n1.conf getmasternodestatus
+/usr/local/bin/dogecash-cli -conf=/etc/masternodes/dogecash_n1.conf getmasternodestatus
 ----------------------------------------------------------------------------------
 #stop the node !
 /usr/local/bin/peps-cli -conf=/etc/masternodes/dogecash_n1.conf stop
