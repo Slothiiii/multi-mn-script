@@ -44,8 +44,8 @@ cat << "EOF"
                                                              ╚╗ @marsmensch 2016-2018 ╔╝
 EOF
 echo "$(tput sgr0)$(tput setaf 3)Have fun, this is crypto after all!$(tput sgr0)"
-echo "$(tput setaf 6)Donations (BTC): 33ENWZ9RCYBG7nv6ac8KxBUSuQX64Hx3x3"
-echo "Questions: marsmensch@protonmail.com$(tput sgr0)"
+echo "$(tput setaf 6)Donations (BTC): 3FkMPNL1CTEjyyn7UQNnKCCkFCCoyy19mZ"
+echo "modmaster66@gmail.com(tput sgr0)"
 }
 
 # /*
