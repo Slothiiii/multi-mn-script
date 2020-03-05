@@ -141,6 +141,4 @@ If you want to check the status of your masternode, the best way is currently ru
 
 If you will experience issues with **Nodemaster**, don't hestitate to ask us for help in our [support discord channel](https://discord.gg/Ka5K9g5).
 
-# Credits to Author
 
-You can ping him via contact@marsmenschen.com for questions or you can donate him via BTC for this great script: 19U8Jgyb38XnbGyQq3SHXS614pmLbvwKeZ
